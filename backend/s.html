@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script>
+$(function() {
+
+        $('#dbType').change(function() {
+            $('.selectDBType').slideUp("slow");
+            $('#' + $(this).val()).slideDown("slow");
+        });
+    });
+</script>
+</head>
+<body>
+
+<label for="db">Choose type</label>
+<select name="dbType" id=dbType">
+   <option>Choose Database Type</option>
+   <option value="oracle">Oracle</option>
+   <option value="mssql">MS SQL</option>
+   <option value="mysql">MySQL</option>
+   <option value="other">Other</option>
+</select>
+
+<div id="other" class="selectDBType" style="display:none;">
+<label for="specify">Specify</label>
+<input type="text" name="specify" placeholder="Specify Databse Type"/>
+</div>
+
+</body>
+</html>
