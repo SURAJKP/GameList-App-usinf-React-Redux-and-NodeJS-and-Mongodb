@@ -1,2 +1,2 @@
-# To run this code "npm install" and "npm start" 
+# To run this code open Backed folder repository with cmd and run "npm install" and "npm start" and back to main folder,open one more cmd prompt run "npm install"...
 # Happy Coding
